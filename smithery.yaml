@@ -1,0 +1,5 @@
+name: test-mcp-server
+runtime: python3.10
+context: .
+entrypoint: uvicorn server:app --host 0.0.0.0 --port $PORT
+expose: true
